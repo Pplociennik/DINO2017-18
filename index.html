@@ -153,7 +153,7 @@ git -C blame - pozwala sprawdzic, kto jest autorem danej linii kodu, 'obwinic tw
       git push "remote" "branch"
     </dt>
     <dd>
-      Synchronizacja z serwerem zdalnym "remote" gałęzi "branch"
+      Synchronizacja z serwerem zdalnym "remote" gałęzi lokalnej "branch"
     </dd>
     <dt>
       git log "branch" --not "branch"
@@ -180,6 +180,12 @@ git -C blame - pozwala sprawdzic, kto jest autorem danej linii kodu, 'obwinic tw
       gitk - The Git repository browse.
       gitk -all - Show all refs (branches, tags, etc.).
     </dd>
+	<dt>
+	git branch --merged
+	</dt>
+	<dd>
+	Wylistowuje gałęzie, które zostały scalone i są osiągalne z określonego commita. Niekompatybilne z --no-merged
+	</dd>
   </dl>
 </body>
 </html>
